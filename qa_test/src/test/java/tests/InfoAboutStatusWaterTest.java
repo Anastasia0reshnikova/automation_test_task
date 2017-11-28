@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Description("Проверка работы датчика температур")
 @RunWith(DataProviderRunner.class)
 
-public class InfoAboutStatusWaterTest {
+public class InfoAboutStatusWaterTest<T> {
 
     @BeforeClass
     public static void setBaseUrl() {
@@ -111,6 +111,33 @@ public class InfoAboutStatusWaterTest {
                 .as("Статус о состоянии воды при температуре = " + temperature + "'F НЕ верен")
                 .isEqualTo(status);
     }
+
+    @DataProvider
+    public static Object[][] notNumberTemp() {
+        return new Object[][] {
+                {"seven"},
+                {null},
+                {100000},
+                {-120000},
+                {"@%^"},
+                {""},
+        };
+    }
+
+    @Description("Реакция датчика при не корректных данных")
+    @Test
+    @UseDataProvider("notNumberTemp")
+    public void notNumberTemp_Test(T temperature) {
+        Response response = given().when().get("/?temperature=" + temperature);
+        response.prettyPrint();
+        assertThat(response.getStatusCode())
+                .as("Код ошибки возращается не верно")
+                .isEqualTo(400);
+        assertThat(response.jsonPath().getString("\"Oops!\""))
+                .as("Статус о состоянии воды при температуре = " + temperature + "'F НЕ верен")
+                .isEqualTo("It doesn't feel like temperature. Are you using Farengheit scale?");
+    }
+
 
     //Получить статус о состоянии воды при указанной температуре
     private void getStatus(Integer temperature, String status) {
