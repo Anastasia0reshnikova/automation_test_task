@@ -7,6 +7,18 @@
     <groupId>qa_test</groupId>
     <artifactId>qa_test</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
 
@@ -22,12 +34,18 @@
             <version>1.12.0</version>
         </dependency>
 
+        <!-- Selenium -->
+        <!--<dependency>-->
+            <!--<groupId>org.seleniumhq.selenium</groupId>-->
+            <!--<artifactId>selenium-java</artifactId>-->
+            <!--<version>3.7.1</version>-->
+        <!--</dependency>-->
+
         <!-- Selenide -->
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>4.5</version>
-            <scope>test</scope>
+            <version>4.8</version>
         </dependency>
 
         <!-- Assert-j -->
