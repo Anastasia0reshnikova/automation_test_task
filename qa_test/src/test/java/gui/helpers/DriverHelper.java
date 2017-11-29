@@ -14,11 +14,12 @@ public class DriverHelper {
     public void init() {
         System.out.println("Открываем браузер");
         //В папке resources два драйвера: для Win и Mac OS
-        //System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+        String os = System.getProperty("os.name").toLowerCase();
+        if (os.equals("windows")){ System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");}
+        if (os.equals("mac")){ System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");}
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;
-        Configuration.timeout = 15000;
+        Configuration.timeout = 20000;
     }
 
     public void goToPage() {

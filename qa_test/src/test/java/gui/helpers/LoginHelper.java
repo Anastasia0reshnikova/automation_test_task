@@ -1,11 +1,14 @@
 package gui.helpers;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import gui.forms.LoginForm;
+import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 /**
  * Created by a.oreshnikova on 28.11.2017.
@@ -22,13 +25,9 @@ public class LoginHelper {
     private SelenideElement dashboardElement = $(".s-dashboard__title");
 
     public void login(LoginForm user) {
-        buttonEnter.click();
+        buttonEnter.waitUntil(Condition.visible, 15000).click();
         fillField(fillEmail, user.getEmail());
         fillField(fillPassword, user.getPassword());
-        if (checkBox.is(Condition.exist)) {
-            checkBox.shouldBe(Condition.visible.because("Чек-бокс \"Я не робот\" должен присутствовать на форме")).click();
-            checkBox.parent().shouldHave(Condition.attribute("aria-checked", "true"));
-        }
         enterAuth.click();
     }
 
