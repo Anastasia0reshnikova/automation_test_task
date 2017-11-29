@@ -1,14 +1,11 @@
 package gui.helpers;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
 import gui.forms.LoginForm;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
 
 /**
  * Created by a.oreshnikova on 28.11.2017.

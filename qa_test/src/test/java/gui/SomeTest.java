@@ -15,6 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Created by a.oreshnikova on 28.11.2017.
  */
+
 public class SomeTest {
 
     private static DriverHelper driver;
