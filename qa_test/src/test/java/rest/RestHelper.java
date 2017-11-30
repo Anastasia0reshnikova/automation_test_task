@@ -12,26 +12,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class RestHelper<T> {
 
     //Получить статус о состоянии воды при указанной температуре
-    public void getStatusAndAssert(Integer temperature, String status) {
+    public void getStatusAndAssert(String temperature, String status, int code) {
         Response response = given().when().get("/?temperature=" + temperature);
         response.prettyPrint();
-        assertStatusCode(response, 200);
+        assertStatusCode(response, code);
         assertStatusWater(temperature, status, response);
-    }
-
-    public void getStatusAndAssert(Double temperature, String status) {
-        Response response = given().when().get("/?temperature=" + temperature);
-        response.prettyPrint();
-        assertStatusCode(response, 200);
-        assertStatusWater(temperature, status, response);
-    }
-
-    //Проверка негативных сценариев
-    public void getStatus400AndAssert(T temperature) {
-        Response response = given().when().get("/?temperature=" + temperature);
-        response.prettyPrint();
-        assertStatusCode(response, 400);
-        assertNotTempData(temperature, response);
     }
 
     //Вспомогательные методы
@@ -41,21 +26,15 @@ public class RestHelper<T> {
                 .isEqualTo(code);
     }
 
-    private void assertStatusWater(Integer temperature, String status, Response response) {
-        assertThat(response.jsonPath().getString("state"))
-                .as("Статус о состоянии воды при температуре = " + temperature + "'F НЕ верен")
-                .isEqualTo(status);
-    }
-
-    private void assertStatusWater(Double temperature, String status, Response response) {
-        assertThat(response.jsonPath().getString("state"))
-                .as("Статус о состоянии воды при температуре = " + temperature + "'F НЕ верен")
-                .isEqualTo(status);
-    }
-
-    private void assertNotTempData(T temperature, Response response) {
-        assertThat(response.jsonPath().getString("\"Oops!\""))
-                .as("Статус о состоянии воды при температуре = " + temperature + "'F НЕ верен")
-                .isEqualTo("It doesn't feel like temperature. Are you using Farengheit scale?");
+    private void assertStatusWater(String temperature, String status, Response response) {
+        if (response.getStatusCode() == 200) {
+            assertThat(response.jsonPath().getString("state"))
+                    .as("Статус о состоянии воды при температуре = " + temperature + "'F НЕ верен")
+                    .isEqualTo(status);
+        } else if (response.getStatusCode() == 400) {
+            assertThat(response.jsonPath().getString("\"Oops!\""))
+                    .as("Статус о состоянии воды при температуре = " + temperature + "'F НЕ верен")
+                    .isEqualTo(status);
+        }
     }
 }

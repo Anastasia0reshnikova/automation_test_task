@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bb97a60d-9efb-428b-bf0a-f06f420da4ca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qa_test/src/test/java/gui/SomeTest.java" afterPath="$PROJECT_DIR$/qa_test/src/test/java/gui/SomeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qa_test/src/test/java/gui/helpers/LoginHelper.java" afterPath="$PROJECT_DIR$/qa_test/src/test/java/gui/helpers/LoginHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qa_test/src/test/java/rest/InfoAboutStatusWaterTest.java" afterPath="$PROJECT_DIR$/qa_test/src/test/java/rest/InfoAboutStatusWaterTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qa_test/src/test/java/rest/RestHelper.java" afterPath="$PROJECT_DIR$/qa_test/src/test/java/rest/RestHelper.java" />
     </list>
     <ignored path="$PROJECT_DIR$/qa_test/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +19,39 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="RestHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qa_test/src/test/java/rest/RestHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InfoAboutStatusWaterTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/qa_test/src/test/java/rest/InfoAboutStatusWaterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-338">
+              <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+              <folding>
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1226#1227#0" expanded="true" />
+                <element signature="e#1594#1595#0" expanded="true" />
+                <element signature="e#1660#1661#0" expanded="true" />
+                <element signature="e#2008#2009#0" expanded="true" />
+                <element signature="e#2074#2075#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,7 +93,6 @@
         <option value="$PROJECT_DIR$/qa_test/pom.xml" />
         <option value="$PROJECT_DIR$/qa_test/src/test/java/tests/gui/helpers/LoginHelper.java" />
         <option value="$PROJECT_DIR$/qa_test/src/test/java/tests/gui/helpers/DriverHelper.java" />
-        <option value="$PROJECT_DIR$/qa_test/src/test/java/rest/RestHelper.java" />
         <option value="$PROJECT_DIR$/qa_test/src/test/java/gui/forms/NoteForm.java" />
         <option value="$PROJECT_DIR$/qa_test/src/test/java/gui/helpers/NotesHelper.java" />
         <option value="$PROJECT_DIR$/qa_test/src/test/java/gui/helpers/ProjectHelper.java" />
@@ -69,6 +100,8 @@
         <option value="$PROJECT_DIR$/qa_test/TableAssert" />
         <option value="$PROJECT_DIR$/qa_test/src/test/java/gui/helpers/LoginHelper.java" />
         <option value="$PROJECT_DIR$/qa_test/src/test/java/gui/SomeTest.java" />
+        <option value="$PROJECT_DIR$/qa_test/src/test/java/rest/RestHelper.java" />
+        <option value="$PROJECT_DIR$/qa_test/src/test/java/rest/InfoAboutStatusWaterTest.java" />
       </list>
     </option>
   </component>
@@ -76,8 +109,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2212" />
-    <option name="y" value="43" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -124,9 +157,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,65 +175,14 @@
       <recent name="C:\Users\a.oreshnikova\IdeaProjects\automation_test_task\qa_test\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\a.oreshnikova\IdeaProjects\automation_test_task\qa_test" />
       <recent name="$PROJECT_DIR$/qa_test/src/test/resources" />
       <recent name="C:\Users\a.oreshnikova\IdeaProjects\automation_test_task\qa_test\src\test\resources" />
       <recent name="C:\Users\a.oreshnikova\IdeaProjects\automation_test_task\qa_test\src\test\resources\drivers" />
       <recent name="C:\Users\a.oreshnikova\IdeaProjects\automation_test_task\qa_test\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SomeTest">
-    <configuration default="false" name="SomeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="gui.helpers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="qa_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="gui" />
-      <option name="MAIN_CLASS_NAME" value="gui.SomeTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="SomeTest.loginOnSite_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="qa_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="gui" />
-      <option name="MAIN_CLASS_NAME" value="gui.SomeTest" />
-      <option name="METHOD_NAME" value="loginOnSite_Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.InfoAboutStatusWaterTest">
     <configuration default="false" name="SomeTest.createNote_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -265,6 +247,58 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="gui" />
       <option name="MAIN_CLASS_NAME" value="gui.SomeTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="InfoAboutStatusWaterTest.notCorrectTemp_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="qa_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rest" />
+      <option name="MAIN_CLASS_NAME" value="rest.InfoAboutStatusWaterTest" />
+      <option name="METHOD_NAME" value="notCorrectTemp_Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="InfoAboutStatusWaterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="qa_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rest" />
+      <option name="MAIN_CLASS_NAME" value="rest.InfoAboutStatusWaterTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -484,19 +518,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SomeTest.test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SomeTest.loginOnSite_Test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SomeTest.createNote_Test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SomeTest.createProject_Test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SomeTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SomeTest.createNote_Test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SomeTest.createProject_Test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SomeTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.InfoAboutStatusWaterTest.notCorrectTemp_Test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.InfoAboutStatusWaterTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SomeTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SomeTest.createProject_Test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SomeTest.createNote_Test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SomeTest.loginOnSite_Test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SomeTest.test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.InfoAboutStatusWaterTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.InfoAboutStatusWaterTest.notCorrectTemp_Test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SomeTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SomeTest.createProject_Test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SomeTest.createNote_Test" />
       </list>
     </recent_temporary>
   </component>
@@ -514,23 +548,23 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SomeTest - 2017.11.29 at 12h 38m 03s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
+    <history-entry file="InfoAboutStatusWaterTest - 2017.11.30 at 10h 14m 10s.xml">
+      <configuration name="InfoAboutStatusWaterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SomeTest - 2017.11.29 at 12h 45m 32s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
+    <history-entry file="InfoAboutStatusWaterTest_notCorrectTemp_Test - 2017.11.30 at 09h 42m 58s.xml">
+      <configuration name="InfoAboutStatusWaterTest.notCorrectTemp_Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SomeTest - 2017.11.29 at 12h 49m 53s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
+    <history-entry file="InfoAboutStatusWaterTest_notCorrectTemp_Test - 2017.11.30 at 09h 43m 21s.xml">
+      <configuration name="InfoAboutStatusWaterTest.notCorrectTemp_Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SomeTest - 2017.11.29 at 12h 51m 54s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
+    <history-entry file="InfoAboutStatusWaterTest_notCorrectTemp_Test - 2017.11.30 at 09h 43m 33s.xml">
+      <configuration name="InfoAboutStatusWaterTest.notCorrectTemp_Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SomeTest - 2017.11.29 at 12h 52m 37s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
+    <history-entry file="InfoAboutStatusWaterTest_notCorrectTemp_Test - 2017.11.30 at 09h 43m 58s.xml">
+      <configuration name="InfoAboutStatusWaterTest.notCorrectTemp_Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SomeTest - 2017.11.29 at 12h 53m 35s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
+    <history-entry file="InfoAboutStatusWaterTest_notCorrectTemp_Test - 2017.11.30 at 09h 49m 32s.xml">
+      <configuration name="InfoAboutStatusWaterTest.notCorrectTemp_Test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SomeTest - 2017.11.29 at 12h 55m 27s.xml">
       <configuration name="SomeTest" configurationId="JUnit" />
@@ -555,7 +589,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2212" y="43" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -575,7 +609,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28464818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28731343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -590,12 +624,30 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -609,7 +661,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -619,7 +671,7 @@
         <state relative-caret-position="272">
           <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -629,7 +681,7 @@
         <state relative-caret-position="357">
           <caret line="26" column="52" lean-forward="false" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -639,7 +691,7 @@
         <state relative-caret-position="119">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -648,7 +700,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#2008#2009#0" expanded="true" />
+            <element signature="e#2074#2075#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -667,7 +728,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -677,7 +738,7 @@
         <state relative-caret-position="272">
           <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -687,7 +748,7 @@
         <state relative-caret-position="357">
           <caret line="26" column="52" lean-forward="false" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -705,7 +766,7 @@
         <state relative-caret-position="375">
           <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -715,7 +776,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -732,7 +793,7 @@
         <state relative-caret-position="420">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -782,39 +843,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qa_test/build/reports/tests/1511948651011.0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/qa_test/build/reports/tests/1511948651011.0.png" />
     <entry file="file://$PROJECT_DIR$/qa_test/build/reports/tests/1511949211934.0.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qa_test/TableAssert.xsls">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa_test/TableAssert">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/qa_test/TableAssert.xsls" />
+    <entry file="file://$PROJECT_DIR$/qa_test/TableAssert" />
     <entry file="file://$PROJECT_DIR$/qa_test/src/test/java/gui/forms/LoginForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#334#335#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,7 +871,7 @@
         <state relative-caret-position="357">
           <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -841,7 +881,7 @@
         <state relative-caret-position="697">
           <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,7 +891,7 @@
         <state relative-caret-position="833">
           <caret line="51" column="5" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -861,7 +901,7 @@
         <state relative-caret-position="561">
           <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -871,6 +911,16 @@
         <state relative-caret-position="289">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qa_test/src/test/java/rest/RestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -878,18 +928,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qa_test/src/test/java/rest/InfoAboutStatusWaterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qa_test/src/test/java/rest/RestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="-338">
+          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#2008#2009#0" expanded="true" />
+            <element signature="e#2074#2075#0" expanded="true" />
           </folding>
         </state>
       </provider>

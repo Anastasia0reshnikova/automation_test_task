@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 @Description("Проверка работы датчика температур")
 @RunWith(DataProviderRunner.class)
 
-public class InfoAboutStatusWaterTest<T> {
+public class InfoAboutStatusWaterTest {
 
     private RestHelper rest = new RestHelper();
 
@@ -31,69 +31,58 @@ public class InfoAboutStatusWaterTest<T> {
     @DataProvider
     public static Object[][] iceTemp() {
         return new Object[][] {
-                {-454},
-                {-1},
-                {0},
-                {1},
-                {31},
-                {32},
+                {"-454"},
+                {"0"},
+                {"32"},
         };
     }
 
     @Description("Состояние воды в диапазоне температур: от замерзания воды 32'F до -454'F (темпетарура в космосе)")
     @Test
     @UseDataProvider("iceTemp")
-    public void negativeTemperature_Test (Integer temperature) {
-        rest.getStatusAndAssert(temperature, "Ice");
+    public void negativeTemperature_Test (String temperature) {
+        rest.getStatusAndAssert(temperature, "Ice", 200);
     }
 
     @DataProvider
     public static Object[][] waterTemp() {
         return new Object[][] {
-                {33},
-                {34},
-                {70},
-                {210},
-                {211},
+                {"33"},
+                {"211"},
         };
     }
 
     @Description("Состояние воды в диапазоне температур: от 33'F и до границы точки кипения 211'F")
     @Test
     @UseDataProvider("waterTemp")
-    public void positiveTemperature_Test(Integer temperature) {
-        rest.getStatusAndAssert(temperature, "Water");
+    public void positiveTemperature_Test(String temperature) {
+        rest.getStatusAndAssert(temperature, "Water", 200);
     }
 
     @DataProvider
     public static Object[][] steamTemp() {
         return new Object[][] {
-                {212},
-                {213},
-                {419},
-                {999},
+                {"212"},
+                {"300"},
         };
     }
 
     @Description("Состояние воды в диапазоне температур: от точки кипения 212'F")
     @Test
     @UseDataProvider("steamTemp")
-    public void steamTemperature_Test(Integer temperature) {
-        rest.getStatusAndAssert(temperature, "Steam");
+    public void steamTemperature_Test(String temperature) {
+        rest.getStatusAndAssert(temperature, "Steam", 200);
     }
 
     @DataProvider
     public static Object[][] doubleTypeTemp() {
         return new Object[][] {
-                {-454.01, "Ice"},
-                {31.5, "Ice"},
-                {32.00, "Ice"},
-                {64.0/2.0, "Ice"},
-                {33.9, "Water"},
-                {210.09, "Water"},
-                {212.01, "Steam"},
-                {310.2, "Steam"},
-                {310.20/1.00, "Steam"},
+                {"-454.01", "Ice"},
+                {"32.5", "Ice"},
+                {"64.0/2.0", "Ice"},
+                {"33.9", "Water"},
+                {"210.09", "Water"},
+                {"212.01", "Steam"},
         };
     }
 
@@ -101,17 +90,16 @@ public class InfoAboutStatusWaterTest<T> {
     @Description("Состояние воды при вводе значений с плавающей точкой от -454.00 до 214.00")
     @Test
     @UseDataProvider("doubleTypeTemp")
-    public void statusTempIfDoubleFormat_Test(Double temperature, String status) {
-        rest.getStatusAndAssert(temperature, status);
+    public void statusTempIfDoubleFormat_Test(String temperature, String status) {
+        rest.getStatusAndAssert(temperature, status, 200);
     }
 
     @DataProvider
     public static Object[][] notCorrectTemp() {
         return new Object[][] {
                 {"seven"}, //Строка
-                {null},
-                {590100000}, //Большое положительное число
-                {-590000900}, //Большое отрицательное число
+                {"null"},
+                {"-590000900"}, //Большое отрицательное число
                 {"@%^"}, //Символы
                 {""}, //Пустая строка
         };
@@ -120,7 +108,8 @@ public class InfoAboutStatusWaterTest<T> {
     @Description("Реакция датчика при не корректных данных")
     @Test
     @UseDataProvider("notCorrectTemp")
-    public void notCorrectTemp_Test(T temperature) {
-        rest.getStatus400AndAssert(temperature);
+    public void notCorrectTemp_Test(String temperature) {
+        String status = "It doesn't feel like temperature. Are you using Farengheit scale?";
+        rest.getStatusAndAssert(temperature, status, 400);
     }
 }
