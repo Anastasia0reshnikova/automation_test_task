@@ -13,23 +13,32 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class ProjectHelper {
 
-    private SelenideElement fillDomain = $(".s-analytics__content [placeholder=\"Enter domain...\"]");
+    //Домен
+    private SelenideElement fillDomain = $(".s-analytics__content [placeholder='Enter domain...']");
     private SelenideElement addDomainButton = $(".s-analytics__content .s-analytics__submit-domain-btn .s-btn__text");
-
+    //Проект
     private SelenideElement fillProjectName = $(".s-no-projects__input.s-input__control");
     private SelenideElement buttonCreate = $x("//span[.='Create']");
-
+    //Заголовок страницы
     private SelenideElement projectPageTitle = $(".pr-page__title-name");
+    //Удаление проекта
+    private SelenideElement settings = $("div .sr-infomenu-title");
+    private SelenideElement delete = $(".js-remove");
+    private SelenideElement fillProjectNameForDelete = $("[placeholder='Project name']");
+    private SelenideElement buttonDelete = $x("//span[.='Delete']");
+    private SelenideElement pageTitle = $(".pr-page__title-text");
 
+    //Создать домен
     private void addDomain(String domain) {
-        fillField(fillDomain, domain);
+        fillDomain.setValue(domain);
         addDomainButton.click();
         $("[href='/info/test']").shouldHave(Condition.text(domain));
     }
 
+    //Создать проект
     public void createProject(String domain, String name) {
         addDomain(domain);
-        fillField(fillProjectName, name + "." + domain);
+        fillProjectName.shouldBe(Condition.visible).setValue(name + "." + domain);
         buttonCreate.click();
         Selenide.sleep(1000);
     }
@@ -38,11 +47,12 @@ public class ProjectHelper {
         return projectPageTitle.getText();
     }
 
-    private void fillField(SelenideElement element, String text) {
-        element.click();
-        if(text != null) {
-            element.clear();
-            element.setValue(text);
-        }
+    //Удалять проект после теста
+    public void deleteProject(String name, String domain) {
+        settings.click();
+        delete.click();
+        fillProjectNameForDelete.shouldBe(Condition.visible).setValue(name + "." + domain);
+        buttonDelete.click();
+        pageTitle.shouldBe(Condition.visible);
     }
 }

@@ -4,12 +4,12 @@ package gui.forms;
  * Created by a.oreshnikova on 28.11.2017.
  */
 
-public class LoginForm {
+public class User {
 
     private String email;
     private String password;
 
-    public LoginForm(String email, String password) {
+    public User(String email, String password) {
         this.email = email;
         this.password = password;
     }

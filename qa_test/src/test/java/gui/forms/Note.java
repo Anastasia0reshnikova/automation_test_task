@@ -3,14 +3,14 @@ package gui.forms;
 /**
  * Created by a.oreshnikova on 29.11.2017.
  */
-public class NoteForm {
+public class Note {
 
     private String name;
     private String text;
 
-    public NoteForm() {}
+    public Note() {}
 
-    public NoteForm(String name, String text) {
+    public Note(String name, String text) {
         this.name = name;
         this.text = text;
     }
